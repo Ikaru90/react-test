@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "env": {
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "classes": true
+    }
+  },
+  "rules": {
+    "react/prop-types": [
+      "warn",
+      {
+        "ignore": [
+          "children",
+          "location",
+          "props"
+        ]
+      }
+    ],
+    "jsx-a11y/control-has-associated-label": "off",
+    "import/prefer-default-export": "off",
+    "react/destructuring-assignment": "off"
+  }
+}
